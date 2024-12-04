@@ -17,6 +17,7 @@
     "license": "ISC",
     "dependencies": {
         "02_express": "file:",
+        "dotenv": "^16.4.7",
         "express": "^4.21.1"
     },
     "devDependencies": {

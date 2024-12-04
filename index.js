@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import express from "express";
 
 const app = express();
@@ -7,7 +8,7 @@ app.use(express.json());
 let items = [];
 let nextItem = 0;
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 //Add mew item
 app.post("/items", (req, res) => {
     const { itemName, price } = req.body;
